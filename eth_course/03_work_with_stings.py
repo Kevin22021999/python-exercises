@@ -7,6 +7,11 @@ print(f"First leg:\n{home} vs {guest}")
 print(home[0],home[1],home[2], ":" , guest[0], guest[1], guest[2])
 
 # Swap the values of the two variables.
+# Or like this: 
+# a_temp = a
+# a = b
+#b = a_temp
+# But this version here is more elegant.
 home, guest = guest, home
 print(f"First leg:\n{home} vs {guest}")
 # Prints the string "Return Leg:" followed by a newline (\n), and then the vales of the variables "guest" and"home".
