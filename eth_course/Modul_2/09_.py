@@ -4,6 +4,8 @@ correct_pin = "007"
 count = 0
 maxAttmepts = 3
 
+
+
 while count < maxAttmepts:
     try:
         x = int(input("1."))
@@ -19,7 +21,7 @@ while count < maxAttmepts:
         print("Please enter a nummber")
     print("Please wait for confirmation...")
 
-    entered_pin = x + y + z
+    entered_pin = (f"{x}{y}{z}")
 
     if entered_pin == correct_pin:
         print("Pin correct")
