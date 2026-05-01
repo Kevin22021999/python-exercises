@@ -1,16 +1,31 @@
 print("Please enter your 3-digit pin code.")
-x = int(input("1. "))
-y = int(input("2. "))
-z = int(input("3. "))
-print(f"You have entered:{x}{y}{z}")
 
-if x == 0 and y == 0 and z == 7:
-    print(f"You've entered: {x}{y}{z}")
-else:
-    count = 0
-    if i in range(3):
-        user_input = input
-        print("WRONG PIN!\nTry again")
-    x = int(input("1. "))
-    y = int(input("2. "))
-    z = int(input("3. "))
+correct_pin = "007"
+count = 0
+maxAttmepts = 3
+
+while count < maxAttmepts:
+    try:
+        x = int(input("1."))
+    except ValueError:
+        print("Please enter a nummber")
+    try:
+        y = int(input("2."))
+    except ValueError:
+        print("Please enter a nummber")
+    try:
+        z = int(input("3."))
+    except ValueError:
+        print("Please enter a nummber")
+    print("Please wait for confirmation...")
+
+    entered_pin = x + y + z
+
+    if entered_pin == correct_pin:
+        print("Pin correct")
+        break
+    else:
+        count += 1
+    print("Wrong pin.\nTry again.")
+if count == maxAttmepts:
+    print("To many wrong attmeps. Your card has been confiscated.")
