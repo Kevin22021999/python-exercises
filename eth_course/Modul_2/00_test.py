@@ -7,18 +7,28 @@ maxAttmepts = 3
 
 
 while count < maxAttmepts:
-    while try == True
-        x = int(input("1."))
-    if except ValueError:
-        print("Please enter a nummber")
-    try:
-        y = int(input("2."))
-    except ValueError:
-        print("Please enter a nummber")
-    try:
-        z = int(input("3."))
-    except ValueError:
-        print("Please enter a nummber")
+    while True:
+        try:
+            x = int(input("1."))
+            number = int(x)
+            break
+        except ValueError:
+            print("Please enter a nummber")
+    while True:
+        try:
+            y = int(input("1."))
+            number = int(y)
+            break
+        except ValueError:
+            print("Please enter a nummber")
+    while True:
+        try:
+            z = int(input("1."))
+            number = int(z)
+            break
+        except ValueError:
+            print("Please enter a nummber")
+    
     print("Please wait for confirmation...")
 
     entered_pin = (f"{x}{y}{z}")
