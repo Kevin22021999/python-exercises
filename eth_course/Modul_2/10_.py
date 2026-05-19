@@ -1,12 +1,16 @@
-correct = 26
-attemtps = 0
+import random
+
+
+
+
+correct = random.randrange(0,101,1)
+attempts = 0
 guess = ""
 
 while guess != correct:
     while True:
         try:
             guess = int(input("Guess a number:"))
-            number = int(guess)
             break
         except ValueError:
             print("Please enter a integer")
@@ -14,6 +18,6 @@ while guess != correct:
         print("Bigger")
     if guess > correct:
         print("Smaller")
-    attemtps += 1
+    attempts += 1
 if guess == correct:
-    print(f"You guessed correctly!\nUsed attamps:{attemtps}.")
+    print(f"You guessed correctly!\nUsed attempts:{attempts}")
