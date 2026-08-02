@@ -1,3 +1,9 @@
+"""
+Kevin Schmutz
+22.02.1999
+
+"""
+
 # Mein erstes Python-Programm
 x = int(input("Geben Sie eine Zahl ein:\n"))
 # Fordert den Benutzer auf, eine Zahl einzugeben, und speichert diese als Integer in der Variable "x".
