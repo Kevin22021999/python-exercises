@@ -8,7 +8,7 @@ correct_username = "Kevin"
 correct_password = "1234"
 correct_pin = "9999"
 
-if username == correct_username and password == correct_password and correct_pin == pin:
+if username == correct_username and password == correct_password and pin == correct_pin:
     print(f"Welcome {correct_username}!")
 else:
     print("Access denied.")

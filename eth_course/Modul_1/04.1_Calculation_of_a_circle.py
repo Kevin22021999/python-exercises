@@ -1,4 +1,6 @@
-#from math import *, can be used to imports everything from math. To avoid name conflicts, use math.pi instead in this case here.
+#from math import *, can be used to imports everything from math. 
+#To avoid name conflicts, use: "import math" and "math.pi" instead in this case here.
+
 import math
 
 diameter = float(input("Please enter the diameter of the circle in mm. "))
